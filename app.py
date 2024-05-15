@@ -39,4 +39,4 @@ def analyze_sentiment():
         return jsonify({'error': 'GET requests are not supported for this endpoint'}), 405
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host="0.0.0.0")
